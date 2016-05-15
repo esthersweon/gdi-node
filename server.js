@@ -11,6 +11,7 @@ var homeController = require('./controllers/home');
 /** 
 Serve static files (i.e. images, scripts, styles, templates) from public/ directory
 **/
+app.use(express.static('node_modules'));
 app.use(express.static('public'));
 
 /**

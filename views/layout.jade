@@ -6,13 +6,14 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='theme-color' content='#4DA5F4')
     meta(name='csrf-token', content=_csrf)
-    title #{title} - GDI Node Workshop
-    link(rel='stylesheet', href='/css/main.css')
+    title GDI Node Workshop
+    link(rel='stylesheet', href='/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/styles/main.css')
 
   body
     include partials/header
 
-    .container
+    .container.app-content-container
       block content
 
     include partials/footer
