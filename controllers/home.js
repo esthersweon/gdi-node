@@ -7,3 +7,7 @@ exports.home = function (req, res) {
 exports.about = function (req, res) {
   res.render('about');
 }
+
+exports.noRoute = function(req, res) {
+  res.render('404');
+}
