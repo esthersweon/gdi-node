@@ -1,4 +1,10 @@
-var a = 25;
-var b = 50;
+var express = require('express');
+var app = express();
 
-console.log(a + b);
+app.get('/', function (req, res) {
+  res.send('Welcome to the GDI Node Workshop!');
+});
+
+app.listen(3000, function () {
+  console.log('Your app is listening on port 3000!');
+});
