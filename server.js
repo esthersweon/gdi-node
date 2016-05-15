@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'jade');
+
 /**
 Controllers (route handlers)
 **/
@@ -14,7 +16,7 @@ app.use(express.static('public'));
 /**
 App routes
 **/
-app.get('/', homeController.index);
+app.get('/', homeController.home);
 app.get('/about', homeController.about);
 
 app.listen(3000, function () {

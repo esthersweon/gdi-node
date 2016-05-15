@@ -11,6 +11,7 @@
   "author": "Esther Weon <esther.s.weon@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jade": "^1.11.0"
   }
 }
