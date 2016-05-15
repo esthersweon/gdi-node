@@ -7,6 +7,7 @@ app.set('view engine', 'jade');
 Controllers (route handlers)
 **/
 var homeController = require('./controllers/home');
+var apiController = require('./controllers/api');
 
 /** 
 Serve static files (i.e. images, scripts, styles, templates) from public/ directory
@@ -19,6 +20,13 @@ App routes
 **/
 app.get('/', homeController.home);
 app.get('/about', homeController.about);
+
+/**
+API routes
+**/
+app.get('/api/dinosaurs', apiController.dinosaurs);
+
+/** 404 Route **/
 app.get('/*', homeController.noRoute);
 
 app.listen(3000, function () {
