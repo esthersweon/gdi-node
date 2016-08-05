@@ -6,9 +6,9 @@ app.set('view engine', 'jade');
 /**
 Controllers (route handlers)
 **/
-var homeController = require('./controllers/home');
-var apiController = require('./controllers/api');
-var dinosaurController = require('./controllers/dinosaur');
+var homeCtrl = require('./controllers/homeCtrl');
+var apiCtrl = require('./controllers/apiCtrl');
+var dinosaurCtrl = require('./controllers/dinosaurCtrl');
 
 /** 
 Serve static files (i.e. images, scripts, styles, templates) from public/ directory
@@ -19,17 +19,17 @@ app.use(express.static('public'));
 /**
 App routes
 **/
-app.get('/', homeController.home);
-app.get('/about', homeController.about);
-app.get('/dinosaurs', dinosaurController.all);
+app.get('/', homeCtrl.home);
+app.get('/about', homeCtrl.about);
+app.get('/dinosaurs', dinosaurCtrl.all);
 
 /**
 API routes
 **/
-app.get('/api/dinosaurs', apiController.dinosaurs);
+app.get('/api/dinosaurs', apiCtrl.dinosaurs);
 
 /** 404 Route **/
-app.get('/*', homeController.noRoute);
+app.get('/*', homeCtrl.noRoute);
 
 app.listen(3000, function () {
   console.log('Your app is listening on port 3000!');
