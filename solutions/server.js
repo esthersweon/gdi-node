@@ -6,6 +6,10 @@ var app = express();
 // http://jade-lang.com/
 app.set('view engine', 'jade');
 
+// Helpers to POST data
+var bodyParser = require('body-parser');
+app.use( bodyParser.json() );
+
 // Define controllers to handle routes
 var homeCtrl = require('./controllers/homeCtrl');
 var apiCtrl = require('./controllers/apiCtrl');
@@ -22,6 +26,7 @@ app.get('/dinosaurs', dinosaurCtrl.all);
 
 // Define API routes to serve up application data
 app.get('/api/dinosaurs', apiCtrl.dinosaurs);
+app.post('/api/dinosaurs', apiCtrl.addDinosaurs);
 
 // Define a catch-all 404 route
 app.get('/*', homeCtrl.noRoute);
