@@ -10,6 +10,7 @@ console.log("Welcome to Intro to Node!");
 // Define controllers to handle routes
 
 // Define static routes to serve static assets like images, styles, etc.
+// https://expressjs.com/en/starter/static-files.html
 
 // Define page routes to specify which URLs will be handled by which controllers
 

@@ -18,6 +18,7 @@ var apiCtrl = require('./controllers/apiCtrl');
 var dinosaurCtrl = require('./controllers/dinosaurCtrl');
 
 // Define static routes to serve static assets like images, styles, etc.
+// https://expressjs.com/en/starter/static-files.html
 app.use(express.static('node_modules'));
 app.use(express.static('public'));
 
