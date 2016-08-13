@@ -13,7 +13,7 @@ exports.dinosaurs = function (req, res) {
   });
 }
 
-exports.editDinosaurs = function (req, res) {
+exports.addDinosaurs = function (req, res) {
   
   // get all data
   fs.readFile(jsonPath, 'utf-8', function(err, data) {
