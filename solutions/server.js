@@ -31,6 +31,7 @@ app.get('/api/dinosaurs', apiCtrl.dinosaurs);
 app.post('/api/dinosaurs', apiCtrl.addDinosaurs);
 
 // Define a catch-all 404 route
+// https://expressjs.com/en/guide/routing.html
 app.get('/*', homeCtrl.noRoute);
 
 // Start your Express app up on port 3000

@@ -16,5 +16,6 @@ console.log("Welcome to Intro to Node!");
 // Define API routes to serve up application data
 
 // Define a catch-all 404 route
+// https://expressjs.com/en/guide/routing.html
 
 // Start your Express app up on port 3000
