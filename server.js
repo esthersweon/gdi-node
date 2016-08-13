@@ -1,8 +1,11 @@
 console.log("Welcome to Intro to Node!");
 
 // Create an Express app
+// https://expressjs.com/en/starter/hello-world.html
 
 // Set template engine to Jade
+// http://jade-lang.com/
+// https://expressjs.com/en/guide/using-template-engines.html
 
 // Define controllers to handle routes
 

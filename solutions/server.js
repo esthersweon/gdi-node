@@ -1,9 +1,11 @@
 // Create an Express app
+// https://expressjs.com/en/starter/hello-world.html
 var express = require('express');
 var app = express();
 
 // Set template engine to Jade
 // http://jade-lang.com/
+// https://expressjs.com/en/guide/using-template-engines.html
 app.set('view engine', 'jade');
 
 // Helpers to POST data
