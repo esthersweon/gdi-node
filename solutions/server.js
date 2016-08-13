@@ -7,6 +7,7 @@ var app = express();
 // http://jade-lang.com/
 // https://expressjs.com/en/guide/using-template-engines.html
 app.set('view engine', 'jade');
+app.set('views', './views');
 
 // Helpers to POST data
 var bodyParser = require('body-parser');
