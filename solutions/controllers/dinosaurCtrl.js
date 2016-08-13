@@ -1,3 +1,6 @@
+// request module: https://www.npmjs.com/package/request
+// Passing arguments to a template: http://expressjs.com/en/api.html#res.render
+
 var path = require('path');
 var fs = require('fs');
 var request = require('request');
