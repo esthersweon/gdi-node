@@ -11,7 +11,7 @@ exports.about = function (req, res) {
 }
 
 exports.noRoute = function(req, res) {
-  res.render('404');
+  res.render('noRoute');
 }
 
 // request module: https://www.npmjs.com/package/request

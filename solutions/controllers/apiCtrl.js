@@ -19,14 +19,13 @@ exports.addDinosaur = function (req, res) {
     if (err) throw err;
     
     // need to format and add new data
-    var dataBase = JSON.parse(data); // parse the JSON data
-    dataBase.push(req.body); // add the new dindosaur
-    dataBase = JSON.stringify(dataBase); // stringify contents (to be able to send)
+    var arrayOfDinos = JSON.parse(data); // parse the JSON data
+    arrayOfDinos.push(req.body); // add the new dindosaur
 
     // save new data to the database
-    fs.writeFile(jsonPath, dataBase, function(err, info) {
+    fs.writeFile(jsonPath, JSON.stringify(arrayOfDinos), function(err, info) {
       if (err) throw err;
-      res.send(JSON.parse(dataBase)); // render dinosaur list
+      res.send(arrayOfDinos); // render dinosaur list
     });
 
   });
