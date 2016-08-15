@@ -5,7 +5,7 @@ var path = require('path');
 var fs = require('fs');
 var jsonPath = path.join(__dirname, '/../database/dinosaurs.json');
 
-exports.dinosaurs = function (req, res) {
+exports.getDinosaurs = function (req, res) {
   fs.readFile(jsonPath, 'utf-8', function(err, data) {
     if (err) throw err;
 
@@ -13,8 +13,7 @@ exports.dinosaurs = function (req, res) {
   });
 }
 
-exports.addDinosaurs = function (req, res) {
-  
+exports.addDinosaur = function (req, res) {
   // get all data
   fs.readFile(jsonPath, 'utf-8', function(err, data) {
     if (err) throw err;

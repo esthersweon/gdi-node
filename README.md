@@ -9,7 +9,7 @@ Run `node server.js` and check in your terminal for a logged output to verify th
 
 ## Curriculum
 
-All slides for the curriculum are at [http://bit.ly/2aTlwB4].
+All slides for the curriculum are at http://bit.ly/2aTlwB4.
 
 ## Solutions
 The repo's directory structure is mirrored, with all solutions included, inside the `gdi-node/solutions/` directory.
