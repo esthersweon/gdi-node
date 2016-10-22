@@ -9,7 +9,7 @@ var app = express();
 app.set('view engine', 'pug');
 app.set('views', './views');
 
-// Helpers to POST data
+// Bonus: Use bodyParser to help POST data
 var bodyParser = require('body-parser');
 app.use( bodyParser.json() );
 

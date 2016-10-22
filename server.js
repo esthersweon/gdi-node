@@ -7,6 +7,8 @@ console.log("Welcome to Intro to Node!");
 // http://jade-lang.com/
 // https://expressjs.com/en/guide/using-template-engines.html
 
+// Use bodyParser to help POST data
+
 // Define controllers to handle routes
 
 // Define static routes to serve static assets like images, styles, etc.
