@@ -3,10 +3,10 @@
 var express = require('express');
 var app = express();
 
-// Set template engine to Jade
+// Set template engine to Pug
 // http://jade-lang.com/
 // https://expressjs.com/en/guide/using-template-engines.html
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 app.set('views', './views');
 
 // Helpers to POST data
